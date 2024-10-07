@@ -7,6 +7,9 @@ const LineChart = ({ stakeVol,stakeDate,chartName }:{ stakeVol:{name:string;y:nu
   const chartRef = useRef<HighchartsReact.RefObject>(null);
   
   const options = {
+    credits: {
+      enabled: false,
+    },
     title: {
       text: chartName,
       style: {

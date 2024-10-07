@@ -2,7 +2,7 @@ const Overview = ({selectedPool}:{selectedPool:string}) => {
     return ( <div className="bg-gradient-to-br from-clinkAccent-100 via-white to-clinkAccent-100 rounded-2xl w-full h-min p-[1px]">
         <div className="w-full h-32 bg-white rounded-t-2xl grid grid-cols-3 gap-8 p-4 text-[#1A1A1A]">
             <div className="bg-[#FFF7F0] flex p-4 rounded-2xl flex-col gap-1">
-                <p className="text-[#005F73]">clSOL Pools</p>
+                <p className="text-[#005F73]">clSOL Pool <span className="font-bold">({selectedPool})</span></p>
                 <p className=" text-4xl font-semibold">7098.13<span className="text-sm"> clSOL</span></p>
             </div>
             <div className="bg-[#FFF7F0] flex p-4 rounded-2xl flex-col gap-1">

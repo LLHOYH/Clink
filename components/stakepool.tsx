@@ -65,7 +65,7 @@ const StakePool = ({selectedPool}:{selectedPool:string}) => {
   
     return (        
          <div className="bg-gradient-to-br from-clinkAccent-100 via-white to-clinkAccent-100 rounded-2xl w-full h-full p-[3px] ">
-            <div className="w-full h-full bg-white rounded-2xl grid grid-cols-2 grid-rows-3 p-4 gap-4 overflow-hidden">
+            <div className="w-full h-full bg-white rounded-2xl grid grid-cols-2 grid-rows-2 p-4 gap-4 overflow-hidden">
                 <div className="col-span-2 w-full p-5 bg-black rounded-2xl">
                     <LineChart stakeVol={stakeVol} stakeDate={stakeDate} chartName={`Your staked clSOL at ${selectedPool}`}/>
                 </div>
@@ -74,9 +74,6 @@ const StakePool = ({selectedPool}:{selectedPool:string}) => {
                 </div>
                 <div className="w-full p-5 bg-black rounded-2xl">
                     <PieChart data={rewardsData} chartName={`Total rewards at ${selectedPool} (clSOL)`} type='Rewards' />
-                </div>
-                <div className="w-full p-5 text-white">
-                    <h1 className="text-2xl font-bold">Your APR</h1>
                 </div>
             </div>
         </div> );

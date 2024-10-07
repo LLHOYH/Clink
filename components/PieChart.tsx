@@ -13,6 +13,9 @@ const PieChart: React.FC<PieChartProps> = ({ data, chartName, type }) => {
   const chartRef = useRef<HighchartsReact.RefObject>(null);
 
   const options: Highcharts.Options = {
+    credits: {
+      enabled: false,
+    },
     chart: {
       type: 'pie',
       backgroundColor: 'black',

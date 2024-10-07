@@ -32,9 +32,10 @@ export default function RootLayout({
       >
         <Navbar/>
         {children}
-        <div className="w-full h-full absolute right-0 top-0 overflow-hidden -z-10">
-          <Image src='/ui-design/right-wave.svg' alt='right wave' width={800} height={400} className="opacity-20 absolute -top-10 -right-10"/>
-          <Image src='/ui-design/right-wave.svg' alt='right wave' width={800} height={400} className="opacity-20 absolute -top-10 -right-10 rotate-6"/>
+        <div className="w-full h-full absolute right-0 top-0 overflow -z-10">
+          <Image src='/ui-design/right-wave.svg' alt='right wave' width={1000} height={800} className="opacity-20 absolute -top-10 -right-10"/>
+          <Image src='/ui-design/right-wave.svg' alt='right wave' width={1000} height={800} className="opacity-20 absolute -top-10 -right-10 rotate-6"/>
+          <Image src='/ui-design/right-wave.svg' alt='right wave' width={1000} height={800} className="opacity-20 absolute top-[600px] -left-40 -rotate-12 scale-x-[-1]" />
         </div>
       </body>
     </html>
